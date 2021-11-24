@@ -1,8 +1,8 @@
 from os import system as sys
 from urllib.request import urlopen
-import random
 from urllib.request import Request
 from bs4 import BeautifulSoup as BS
+import random
 black='\033[30m'
 red='\033[31m'
 green='\033[32m'
@@ -20,12 +20,12 @@ pink='\033[95m'
 lightcyan='\033[96m'
 all_col = [red,green,orange,cyan,lightgrey,lightred,lightgreen,yellow,lightcyan]
 ran = random.choice(all_col)
-while True:
+sys('clear')
 
-    sys('clear')
-    class ip:
-        def banner(self):
-            p ='''
+
+class ip:
+    def banner(self):
+        print (ran ,'''
    ________        __            .___        
   /  _____/  _____/  |_          |   |_____  
  /   \  ____/ __ \   __\  ______ |   \____ \ 
@@ -33,9 +33,7 @@ while True:
   \______  /\___  >__|           |___|   __/ 
          \/     \/                   |__|    
 ______________________________________________
-'''
-
-    print(ran , p)
+''')
     def public_ip(self):
         headers = {'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"}
         url = Request('https://www.myip.com/',headers=headers)
@@ -50,17 +48,11 @@ ______________________________________________
     def localhost(self):
         print(ran," [+] LocalHost > 127.0.0.1\n")
 
-    ip = ip()
-    ip.banner()
-    ip.public_ip()
-    ip.privet_ip()
-    ip.localhost()
+ip = ip()
+ip.banner()
+ip.public_ip()
+ip.privet_ip()
+ip.localhost()
 
-    cont = input(f"{cyan}[-]Do You want to continue? [y/n]: ").lower
-
-    if cont == "n" or "no":
-        break
-    else:
-        pass
-
-
+    
+    
