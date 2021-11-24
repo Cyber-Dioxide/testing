@@ -34,6 +34,10 @@ class ip:
          \/     \/                   |__|    
 ______________________________________________
 ''')
+
+        print(ran,"\n\n","---"*3," [+] Follow me on instagram @saadkhan041 ","---"*3,"\n\n")
+        print(ran,"\n\n","---"*3," [+] V_2.0 ","---"*3,"\n\n")
+
     def public_ip(self):
         headers = {'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"}
         url = Request('https://www.myip.com/',headers=headers)
