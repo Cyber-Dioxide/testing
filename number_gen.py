@@ -3,18 +3,17 @@ import colorama
 from fontstyle import apply
 from colorama.ansi import Style
 from phonenumbers.phonenumberutil import region_code_for_country_code
-from pyfiglet import figlet_format
 import requests, re, sys, random, time, os
 from colorama import Fore, Back, init
 from random import choice
 import random
-import os,pyfiglet
+import os
 from colorama import Fore
 import requests, re, sys, random, time, os, fontstyle
 from colorama import Fore, Back, init
 from threading import Thread
 
-init(autoreset=True)
+
 from random import choice
 
 init()
@@ -40,8 +39,27 @@ ran = random.choice(all_col)
 
 def banner():
         os.system("clear")
-        en = pyfiglet.figlet_format("Number\nGenerator\n")
-        print(ran, en)
+        
+        print(ran, """ ███▄    █  █    ██  ███▄ ▄███▓ ▄▄▄▄   ▓█████  ██▀███                         
+ ██ ▀█   █  ██  ▓██▒▓██▒▀█▀ ██▒▓█████▄ ▓█   ▀ ▓██ ▒ ██▒                       
+▓██  ▀█ ██▒▓██  ▒██░▓██    ▓██░▒██▒ ▄██▒███   ▓██ ░▄█ ▒                       
+▓██▒  ▐▌██▒▓▓█  ░██░▒██    ▒██ ▒██░█▀  ▒▓█  ▄ ▒██▀▀█▄                         
+▒██░   ▓██░▒▒█████▓ ▒██▒   ░██▒░▓█  ▀█▓░▒████▒░██▓ ▒██▒                       
+░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ░ ▒░   ░  ░░▒▓███▀▒░░ ▒░ ░░ ▒▓ ░▒▓░                       
+░ ░░   ░ ▒░░░▒░ ░ ░ ░  ░      ░▒░▒   ░  ░ ░  ░  ░▒ ░ ▒░                       
+   ░   ░ ░  ░░░ ░ ░ ░      ░    ░    ░    ░     ░░   ░                        
+         ░    ░            ░    ░         ░  ░   ░                            
+                                     ░                                        
+  ▄████ ▓█████  ███▄    █ ▓█████  ██▀███   ▄▄▄     ▄▄▄█████▓ ▒█████   ██▀███  
+ ██▒ ▀█▒▓█   ▀  ██ ▀█   █ ▓█   ▀ ▓██ ▒ ██▒▒████▄   ▓  ██▒ ▓▒▒██▒  ██▒▓██ ▒ ██▒
+▒██░▄▄▄░▒███   ▓██  ▀█ ██▒▒███   ▓██ ░▄█ ▒▒██  ▀█▄ ▒ ▓██░ ▒░▒██░  ██▒▓██ ░▄█ ▒
+░▓█  ██▓▒▓█  ▄ ▓██▒  ▐▌██▒▒▓█  ▄ ▒██▀▀█▄  ░██▄▄▄▄██░ ▓██▓ ░ ▒██   ██░▒██▀▀█▄  
+░▒▓███▀▒░▒████▒▒██░   ▓██░░▒████▒░██▓ ▒██▒ ▓█   ▓██▒ ▒██▒ ░ ░ ████▓▒░░██▓ ▒██▒
+ ░▒   ▒ ░░ ▒░ ░░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ▒ ░░   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░
+  ░   ░  ░ ░  ░░ ░░   ░ ▒░ ░ ░  ░  ░▒ ░ ▒░  ▒   ▒▒ ░   ░      ░ ▒ ▒░   ░▒ ░ ▒░
+░ ░   ░    ░      ░   ░ ░    ░     ░░   ░   ░   ▒    ░      ░ ░ ░ ▒    ░░   ░ 
+      ░    ░  ░         ░    ░  ░   ░           ░  ░            ░ ░     ░     
+                                                                              """)
         print(ran + "\n\t\tV_2.5\t\n\n")
 
         print(Fore.CYAN, "- " * 4, " [+] Follow me on Instagram @saadkhan041 ", "- " * 4)
