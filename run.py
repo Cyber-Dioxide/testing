@@ -1,4 +1,4 @@
-import sys,os
+import sys,os , string
 try:
     from colorama import Fore
 
@@ -20,7 +20,16 @@ G = Fore.GREEN
 C = Fore.CYAN
 Y = Fore.YELLOW
 
-print(sys.argv[1])
+
+for i in string.ascii_letters:
+    for j in sys.argv[1]:
+        if i == j:
+
+            print(R + "[@] Usage: python3 run.py [range of ip's]")
+            print(G + "[>] Note: Range of ip's should be numeric")
+            exit()
+
+    
 
 rang = sys.argv[1]
 
