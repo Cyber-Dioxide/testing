@@ -20,8 +20,12 @@ G = Fore.GREEN
 C = Fore.CYAN
 Y = Fore.YELLOW
 
+print(sys.argv[1])
 
-rang = sys.argv[0]
+rang = sys.argv[1]
+
+
+
 cmd("apt install ruby")
 
 cmd(f"ruby Gen.rb {rang}")
